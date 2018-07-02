@@ -1,0 +1,31 @@
+function loneSum(a,b,c){
+  var sum = 0;
+  arr = [a,b,c];
+  letter = '';
+  if (a == b && b == c){
+    return 0;
+  }
+  else if (a != b && a != c && b != c){
+    return a + b + c;
+   
+  } else{
+  for (var x in arr){
+    var count = 0;
+    for (var i in arr){
+    if (arr[x] == arr[i]){
+      count += 1;
+      letter = arr[x];
+      if (count >= 2){
+      var index = arr.indexOf(letter);
+      arr.splice(index,1);
+      index = arr.indexOf(letter);
+      arr.splice(index,1);
+      return parseInt(arr, 10);
+     }
+    }
+   }
+  }
+ }
+}
+var output = loneSum(3,2,3);
+console.log(output)
