@@ -1,0 +1,12 @@
+function countVowels(str){
+  var re=/(e|i|o|u|a)/g
+  var x=str.match(re)
+  return x.length
+  
+}  
+function animalCount(str){
+  var re=/( dog | cat | chicken )/g
+  var x = re.test(str)
+  return x
+}
+animalCount('dog cat chicken whosres')
