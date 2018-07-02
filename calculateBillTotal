@@ -1,0 +1,9 @@
+function calculateBillTotal(preTaxAndTipAmount) {
+  // your code here
+  var total = preTaxAndTipAmount;
+  total += preTaxAndTipAmount*.095;
+  total += preTaxAndTipAmount*.15;
+  return total
+}
+var output = calculateBillTotal(20);
+console.log(output); // --> 24.9
