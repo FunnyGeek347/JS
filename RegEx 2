@@ -1,0 +1,10 @@
+function userName(str){
+  var rex = /[a-z]_[0-9]{2}$/
+  var y = rex.test(str)
+  return y
+}
+function searchPrice(str){
+
+  var y = str.replace(/\D/g,'')
+  return ('$'+y)
+}
