@@ -1,0 +1,39 @@
+/*
+var day;
+var test = (new Date().getDay());
+
+switch(test){
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  default:
+    day = "Invalid date";
+    break;
+}
+
+console.log(day)
+*/
+
+function checkCar() {
+  var text;
+  var favCar = prompt("input a car");
+
+  switch(favCar) {
+    case "BMW":
+      text = "German car";
+      break;
+    case "Ford":
+      text = "American car";
+      break;
+    case "Peugeot":
+      text = "French car";
+      break;
+      
+      
+  }
+  console.log(text);
+}
+checkCar("favCar")
