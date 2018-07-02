@@ -1,0 +1,21 @@
+function zipCode(str){
+  var re = /^[0-9]{5}$/
+  var x = re.test(str);
+  return x
+
+}
+(zipCode("74021"))
+
+
+function whiteSpace(str){
+  var rex = /\s/
+  var y = rex.test(str)
+  return y 
+}
+whiteSpace("9185557830")
+function socialSecurityNumber(str){
+  var re = /\d{3}-\d{2}-\d{4}/
+  var x = re.test(str);
+  return x
+}
+socialSecurityNumber("333-99-Gayy")
